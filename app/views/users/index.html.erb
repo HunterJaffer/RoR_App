@@ -14,11 +14,11 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.name,class:"label label-primary" %> </td>
-        <td><%= user.email,class:"label label-info" %> </td>
-        <td><%= link_to 'Show', user, class:"label label-default" %> </td>
-        <td><%= link_to 'Edit', edit_user_path(user), class:"label label-warning" %> </td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' },class:"label label-danger" %> </td>
+        <td class="label label-primary"><%= user.name %> </td>
+        <td class="label label-info"><%= user.email %> </td>
+        <td><%= link_to 'Show', user, class:"label label-success",id:"successlbl" %> </td>
+        <td><%= link_to 'Edit', edit_user_path(user), class:"label label-warning",id:"wrnlbl" %> </td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' },class:"label label-danger",id:"danlbl" %> </td>
       </tr>
     <% end %>
   </tbody>

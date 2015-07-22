@@ -9,5 +9,5 @@
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
-<button type="button" class="btn btn-warning" name="button"><%= link_to 'Edit', edit_user_path(@user) %></button>
-<button type="button" class="btn btn-info" name="button"><%= link_to 'Back', users_path %></button>
+<%= link_to 'Edit', edit_user_path(@user),class:"btn btn-warning" %>
+<%= link_to 'Back', users_path,class:"btn btn-info"  %>
